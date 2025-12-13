@@ -1,7 +1,7 @@
 **Here are the steps to install Terraform and an explanation of the standard workflow involved in using it**
 
-**Part 1: How to Install Terraform
-**
+**Part 1: How to Install Terraform**
+
 The installation method depends on your operating system. Using a package manager is generally the easiest and most maintainable way.
 
 **For Windows**
