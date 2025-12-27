@@ -160,5 +160,51 @@ Topics: Implicit dependencies (referencing attributes) vs. Explicit dependencies
 
 Task: Create a server that depends on a security group and network interface (implicit chaining).
 
+==============================================================
+
+**Week 2: State Management & Data**
+
+Goal: Understand the "Brain" of Terraform (State) and how to query external data.
+
+**Day 8: Terraform State (The Holy Grail)**
+
+Topics: What is terraform.tfstate? Why you should never edit it manually. State drift.
+
+Task: Inspect your local state file. Delete a resource manually in the cloud console and run terraform plan to see how state detects drift.
+
+**Day 9: Remote State Backends**
+
+Topics: Problems with local state. Setting up Remote State (S3 + DynamoDB for AWS, or Azure Storage Account).
+
+Task: Migrate your local state to a remote backend.
+
+**Day 10: State Locking**
+
+Topics: Why locking matters in teams. How DynamoDB/Blob leasing handles locking.
+
+Task: Try running two apply commands simultaneously in two terminals to see the lock error.
+
+**Day 11: Data Sources**
+
+Topics: The data block. Querying existing infrastructure (e.g., finding the latest Ubuntu AMI ID).
+
+Task: Use a data source to dynamically fetch an ID instead of hardcoding it.
+
+**Day 12: Meta-Arguments: Count**
+
+Topics: Using count to create multiple identical resources. count.index.
+
+Task: Provision 3 storage buckets using count = 3.
+
+**Day 13: Meta-Arguments: For_Each**
+
+Topics: for_each vs count. Using maps and sets. Why for_each is generally safer than count.
+
+Task: Provision users or groups based on a list of names using for_each.
+
+**Day 14: Review & Mini-Project 1**
+
+Task: Build a standard "VPC + Server" environment using variables, data sources, and remote state.
+
 
 
