@@ -59,7 +59,7 @@ Bash
 terraform -version
 
 
-==================================================================================================================
+==========================================================================================
 
 **Part 2: The Steps Involved (The Terraform Workflow)**
 
@@ -105,6 +105,60 @@ What it does: It looks at your state file and removes all infrastructure managed
 
 
 <img width="637" height="228" alt="image" src="https://github.com/user-attachments/assets/2f1f62cd-57f9-48c5-9ed5-27c8438b991f" />
+
+===============================================================
+
+Here is a structured 30-day learning roadmap for Terraform, designed to take you from a complete beginner to an intermediate/advanced level.
+
+This plan assumes you spend about 1–2 hours per day studying and practicing.
+
+===============================================================
+
+**Week 1: The Foundation (Core Concepts & Syntax)**
+
+Goal: Understand what IaC is, learn HCL syntax, and master the basic CRUD workflow.
+
+**Day 1: Introduction to Infrastructure as Code (IaC)**
+
+Topics: What is IaC? Terraform vs. Ansible vs. CloudFormation. Imperative vs. Declarative approach.
+
+Task: Install Terraform and VS Code (install the "HashiCorp Terraform" extension).
+
+**Day 2: First Steps & Providers**
+
+Topics: Understanding the provider block (AWS, Azure, or GCP). Authentication methods (CLI configuration).
+
+Task: Configure your cloud provider credentials locally.
+
+**Day 3: HCL Basics & Resources**
+
+Topics: HCL syntax (Blocks, Arguments). The resource block.
+
+Task: Write a main.tf to create a single resource (e.g., an AWS EC2 instance or Azure Resource Group).
+
+**Day 4: The Core Workflow**
+
+Topics: terraform init, plan, apply, and destroy. Understanding the command outputs.
+
+Task: Deploy the resource from Day 3, change a tag, apply the update, and then destroy it.
+
+**Day 5: Variables & Outputs**
+
+Topics: variable blocks, data types (string, number, list, map), default values. output blocks.
+
+Task: Refactor your hardcoded values into a variables.tf file and print the IP address using outputs.tf.
+
+**Day 6: Variable Files & Loading Values**
+
+Topics: terraform.tfvars, *.auto.tfvars, passing variables via CLI (-var).
+
+Task: Create a .tfvars file to manage different configurations (e.g., instance size).
+
+**Day 7: Resource Dependencies**
+
+Topics: Implicit dependencies (referencing attributes) vs. Explicit dependencies (depends_on).
+
+Task: Create a server that depends on a security group and network interface (implicit chaining).
 
 
 
